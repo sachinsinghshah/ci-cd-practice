@@ -25,7 +25,7 @@ export default function AnniversaryCard() {
     { label: "Years Together", value: years },
     { label: "Days of Love", value: days.toLocaleString() },
     { label: "Shared Memories", value: (years * 365).toLocaleString() },
-    { label: "Cups of Coffee", value: (days * 2).toLocaleString() },
+    { label: "Cups of Tea", value: (days * 2).toLocaleString() },
   ];
 
   useEffect(() => {
@@ -121,7 +121,7 @@ export default function AnniversaryCard() {
           {activeTab === "message" && (
             <motion.div className="space-y-4 sm:space-y-8">
               <motion.div className="relative p-4 sm:p-6 rounded-2xl bg-rose-50/50 border border-rose-100">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-4">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-4 whitespace-nowrap text-xs sm:text-base">
                   <span className="text-rose-400">
                     ✨ Our Dearest Parents ✨
                   </span>
@@ -207,6 +207,7 @@ export default function AnniversaryCard() {
           <p className="text-rose-400 text-xs sm:text-sm">
             Your loving children
           </p>
+          <p className="text-rose-500 text-sm sm:text-sm">Sachin & Shimran</p>
         </motion.div>
       </motion.div>
     </div>
