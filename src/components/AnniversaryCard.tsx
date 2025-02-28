@@ -7,18 +7,18 @@ import Image from "next/image";
 export default function AnniversaryCard() {
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState("message");
-  const marriageDate = new Date("1997-02-28");
-  const years = 28; // 2025 - 1997
+  const marriageDate = new Date("1996-02-28");
+  const years = 29; // 2025 - 1996
   const days = Math.floor(
     (new Date().getTime() - marriageDate.getTime()) / (1000 * 60 * 60 * 24)
   );
 
   const milestones = [
-    { year: "1997", event: "The Beautiful Beginning - Wedding Day" },
+    { year: "1996", event: "The Beautiful Beginning - Wedding Day" },
     { year: "2000", event: "Entering the New Millennium Together" },
     { year: "2010", event: "A Decade of Growing Love" },
     { year: "2020", event: "Silver Jubilee of Hearts" },
-    { year: "2025", event: "28 Years of Beautiful Memories" },
+    { year: "2025", event: "29 Years of Beautiful Memories" },
   ];
 
   const stats = [
@@ -66,7 +66,7 @@ export default function AnniversaryCard() {
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-12">
           <motion.div className="text-rose-400 font-light tracking-widest mb-4 text-sm sm:text-base">
-            ✨ February 28, 1997 - 2025 ✨
+            ✨ February 28, 1996 - 2025 ✨
           </motion.div>
 
           {/* Parent's Image */}
@@ -83,7 +83,7 @@ export default function AnniversaryCard() {
             </div>
             <motion.div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full shadow-lg">
               <span className="text-rose-600 font-medium text-sm sm:text-base">
-                28 Years of Love ❤️
+                29 Years of Love ❤️
               </span>
             </motion.div>
           </motion.div>
@@ -127,9 +127,9 @@ export default function AnniversaryCard() {
                   </span>
                 </div>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Dear Mom & Dad, as you celebrate 28 beautiful years of
+                  Dear Mom & Dad, as you celebrate 29 beautiful years of
                   togetherness, we are filled with joy and gratitude. Your
-                  journey began in 1997, and since then, you&apos;ve shown us
+                  journey began in 1996, and since then, you&apos;ve shown us
                   what true love looks like - patient, kind, and unwavering.
                 </p>
               </motion.div>
